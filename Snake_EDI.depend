@@ -1,0 +1,446 @@
+# depslib dependency file v1.0
+1627399100 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.cpp
+	<string>
+	<SDL.h>
+	<SDL_ttf.h>
+	"hashing.hpp"
+	<iostream>
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<sdkddkver.h>
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\begin_code.h
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\close_code.h
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572889 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1547322290 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1627396580 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.hpp
+	<SDL.h>
+	<string>
+
+1627397032 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\food.cpp
+	<time.h>
+	"food.hpp"
+	"globalVariables.hpp"
+
+1627397022 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\food.hpp
+	<SDL.h>
+
+1626559367 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\globalvariables.hpp
+
+1627396984 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.cpp
+	<SDL.h>
+	"life.hpp"
+
+1627396977 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.hpp
+	<SDL.h>
+
+1627401718 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
+	<iostream>
+	<time.h>
+	<string>
+	<windows.h>
+	"snake.hpp"
+	"hashing.hpp"
+	"globalVariables.hpp"
+	<SDL.h>
+	<SDL_ttf.h>
+
+1627400649 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.hpp
+	<SDL.h>
+	"life.hpp"
+	"food.hpp"
+	"obstaculos.hpp"
+	"score.hpp"
+
+1627396935 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\obstaculos.hpp
+	<SDL.h>
+
+1627396892 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.hpp
+	<SDL.h>
+	<SDL_ttf.h>
+
+1627396944 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\obstaculo.cpp
+	"obstaculos.hpp"
+	"globalVariables.hpp"
+	<time.h>
+	<SDL.h>
+
+1627396901 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.cpp
+	"score.hpp"
+	<string>
+	<SDL.h>
+	<SDL_ttf.h>
+
+1627400640 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
+	<iostream>
+	<SDL.h>
+	"snake.hpp"
+	"globalVariables.hpp"
+
