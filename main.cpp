@@ -113,16 +113,44 @@ std::string input(){ //retorna o nome do jogador
     SDL_StartTextInput();
     std::string nome = "";
 
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
+    SDL_RenderClear(renderer);
+    SDL_RenderPresent(renderer);
+
+    TTF_Font* Font = TTF_OpenFont("digital-7.ttf", 24);
+    SDL_Color White = {255, 255, 255};
+    SDL_Surface* surface;
+    SDL_Texture* Message;
+    SDL_Rect MessageRect;
+
+    MessageRect.x = 250;
+    MessageRect.y = 250;
+    MessageRect.w = 10;
+    MessageRect.h = 10;
+
     while(1){
         SDL_WaitEvent(&e);
         if(e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_RETURN) break;
-        if(e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_BACKSPACE && nome.length() > 0)
+        if(e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_BACKSPACE && nome.length() > 0){
             nome = nome.substr(0, nome.length()-1);
+            MessageRect.w -= 10;
+        }
+        if(e.type == SDL_QUIT) break;
         if(e.type == SDL_TEXTINPUT){
             nome += e.text.text;
+            MessageRect.w += 10;
         }
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
+        SDL_RenderClear(renderer);
+        SDL_RenderPresent(renderer);
+        surface = TTF_RenderText_Solid(Font,  nome.c_str(), White);
+        Message = SDL_CreateTextureFromSurface(renderer, surface);
+        SDL_RenderCopy(renderer, Message, NULL, &MessageRect);
+        SDL_RenderPresent(renderer);
     }
     SDL_StopTextInput();
+    SDL_FreeSurface(surface);
+
     return nome;
 }
 
@@ -139,14 +167,16 @@ int main( int argc, char * argv[] ){
                 int mouseX, mouseY;
                 SDL_GetMouseState(&mouseX, &mouseY);
                 if(mouseX > 193 && mouseX < 410 && mouseY > 185 && mouseY < 216){
-                    /*std::string nome = input();/*
+                    std::string nome = input();
+                    std::cout << ">>" << nome;
+                    /*
                     if(tabJogadores.buscar(nome) != NULL)
                     do{
                         printf("jogador ja existe! Se quiser jogar como fulano, selecione continuar Jogo");
                         nome = input();
-                    }while(tabJogadores.buscar(nome) != NULL);*/
+                    }while(tabJogadores.buscar(nome) != NULL);
 
-                    NovoJogo(/*nome, &tabJogadores, false*/);
+                    NovoJogo(nome, &tabJogadores, false);*/
                 }
                 else if(mouseX > 193 && mouseX < 410 && mouseY > 235 && mouseY < 268){
                     std::string nome = input();

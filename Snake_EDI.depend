@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1627399100 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.cpp
+1628717951 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.cpp
 	<string>
 	<SDL.h>
 	<SDL_ttf.h>
@@ -380,28 +380,28 @@
 	"begin_code.h"
 	"close_code.h"
 
-1627396580 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.hpp
+1628718243 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.hpp
 	<SDL.h>
 	<string>
 
-1627397032 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\food.cpp
+1628717957 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\food.cpp
 	<time.h>
 	"food.hpp"
 	"globalVariables.hpp"
 
-1627397022 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\food.hpp
+1628718243 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\food.hpp
 	<SDL.h>
 
 1626559367 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\globalvariables.hpp
 
-1627396984 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.cpp
+1628717954 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.cpp
 	<SDL.h>
 	"life.hpp"
 
-1627396977 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.hpp
+1628718243 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.hpp
 	<SDL.h>
 
-1627401718 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
+1628718243 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
 	<iostream>
 	<time.h>
 	<string>
@@ -412,33 +412,33 @@
 	<SDL.h>
 	<SDL_ttf.h>
 
-1627400649 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.hpp
+1628718244 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.hpp
 	<SDL.h>
 	"life.hpp"
 	"food.hpp"
 	"obstaculos.hpp"
 	"score.hpp"
 
-1627396935 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\obstaculos.hpp
+1628718244 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\obstaculos.hpp
 	<SDL.h>
 
-1627396892 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.hpp
+1628718244 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.hpp
 	<SDL.h>
 	<SDL_ttf.h>
 
-1627396944 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\obstaculo.cpp
+1628717953 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\obstaculo.cpp
 	"obstaculos.hpp"
 	"globalVariables.hpp"
 	<time.h>
 	<SDL.h>
 
-1627396901 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.cpp
+1628717952 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.cpp
 	"score.hpp"
 	<string>
 	<SDL.h>
 	<SDL_ttf.h>
 
-1627400640 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
+1628718244 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
 	<iostream>
 	<SDL.h>
 	"snake.hpp"
