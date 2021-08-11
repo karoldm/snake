@@ -67,7 +67,7 @@ void GameOver(SDL_Renderer *renderer){
 
 }
 
-void NovoJogo(/*std::string nome, TabelaJogadores *tabJogadores, bool jogadorExistente*/){
+void NovoJogo(std::string nome, TabelaJogadores *tabJogadores, bool jogadorExistente){
 
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
     SDL_RenderClear(renderer);
@@ -168,32 +168,16 @@ int main( int argc, char * argv[] ){
                 SDL_GetMouseState(&mouseX, &mouseY);
                 if(mouseX > 193 && mouseX < 410 && mouseY > 185 && mouseY < 216){
                     std::string nome = input();
-                    std::cout << ">>" << nome;
-                    /*
                     if(tabJogadores.buscar(nome) != NULL)
-                    do{
-                        printf("jogador ja existe! Se quiser jogar como fulano, selecione continuar Jogo");
-                        nome = input();
-                    }while(tabJogadores.buscar(nome) != NULL);
-
-                    NovoJogo(nome, &tabJogadores, false);*/
+                        NovoJogo(nome, &tabJogadores, true);
+                    else
+                        NovoJogo(nome, %tabJogadores, false);
                 }
                 else if(mouseX > 193 && mouseX < 410 && mouseY > 235 && mouseY < 268){
-                    std::string nome = input();
-                    if(tabJogadores.buscar(nome) == NULL)
-                    do{
-                        printf("jogador nao existe. Para criar um selecione novo jogo");
-                        nome = input();
-                    }while(tabJogadores.buscar(nome) == NULL);
-
-                    NovoJogo(/*nome, &tabJogadores, false*/);
-                }
-                else if(mouseX > 193 && mouseX < 410 && mouseY > 290 && mouseY < 322){
                     tabJogadores.renderTabela(renderer);
                     SDL_RenderPresent(renderer);
                 }
             }
-        }
 
         SDL_DestroyRenderer(renderer);
         SDL_DestroyWindow(window);
