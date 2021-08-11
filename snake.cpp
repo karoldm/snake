@@ -118,10 +118,7 @@ void Snake::checarColisao(SDL_Renderer *renderer){
 
 bool Snake::events(SDL_Event *e){
     while(SDL_PollEvent(e) != 0){
-        if(e->type == SDL_QUIT){
-            return false;
-        }
-        else if(e->type == SDL_KEYDOWN){
+        if(e->type == SDL_KEYDOWN){
             switch(e->key.keysym.sym){
                 case SDLK_RIGHT:
                     mudarDirecao(RIGHT);

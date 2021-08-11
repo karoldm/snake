@@ -82,6 +82,8 @@ void NovoJogo(std::string nome, TabelaJogadores *tabJogadores, bool jogadorExist
 
         snake.events(&e);
 
+        if(e.type == SDL_QUIT) break;
+
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
         SDL_RenderClear(renderer);
 
@@ -93,6 +95,7 @@ void NovoJogo(std::string nome, TabelaJogadores *tabJogadores, bool jogadorExist
     }
 
     GameOver(renderer);
+    //std::cout << "nome " << nome << " score " << snake.getScore();
 
     /*if(jogadorExistente){
         tabJogadores->atualizarScore(snake.getScore(), nome);
@@ -111,7 +114,7 @@ void NovoJogo(std::string nome, TabelaJogadores *tabJogadores, bool jogadorExist
 std::string input(){ //retorna o nome do jogador
     SDL_Event e;
     SDL_StartTextInput();
-    std::string nome = "";
+    std::string nome = "", text = "Insira seu nome e pressione enter para continuar!";
 
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
     SDL_RenderClear(renderer);
@@ -122,11 +125,17 @@ std::string input(){ //retorna o nome do jogador
     SDL_Surface* surface;
     SDL_Texture* Message;
     SDL_Rect MessageRect;
+    SDL_Rect TextRect;
 
     MessageRect.x = 250;
     MessageRect.y = 250;
     MessageRect.w = 10;
     MessageRect.h = 10;
+
+    TextRect.x = 50;
+    TextRect.y = 200;
+    TextRect.w = 500;
+    TextRect.h = 12;
 
     while(1){
         SDL_WaitEvent(&e);
@@ -143,9 +152,15 @@ std::string input(){ //retorna o nome do jogador
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
         SDL_RenderClear(renderer);
         SDL_RenderPresent(renderer);
+
         surface = TTF_RenderText_Solid(Font,  nome.c_str(), White);
         Message = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_RenderCopy(renderer, Message, NULL, &MessageRect);
+
+        surface = TTF_RenderText_Solid(Font,  text.c_str(), White);
+        Message = SDL_CreateTextureFromSurface(renderer, surface);
+        SDL_RenderCopy(renderer, Message, NULL, &TextRect);
+
         SDL_RenderPresent(renderer);
     }
     SDL_StopTextInput();
@@ -155,9 +170,13 @@ std::string input(){ //retorna o nome do jogador
 }
 
 int main( int argc, char * argv[] ){
+
     TabelaJogadores tabJogadores;
     tabJogadores.inicializar();
-    if(init()){
+
+    std::string nome;
+
+    if(init()){ //se tudo foi inicializado com sucesso
         SDL_Event event;
         while(1){
             menu(window, renderer);
@@ -167,21 +186,21 @@ int main( int argc, char * argv[] ){
                 int mouseX, mouseY;
                 SDL_GetMouseState(&mouseX, &mouseY);
                 if(mouseX > 193 && mouseX < 410 && mouseY > 185 && mouseY < 216){
-                    std::string nome = input();
+                    nome = input();
                     if(tabJogadores.buscar(nome) != NULL)
                         NovoJogo(nome, &tabJogadores, true);
                     else
-                        NovoJogo(nome, %tabJogadores, false);
+                        NovoJogo(nome, &tabJogadores, false);
                 }
                 else if(mouseX > 193 && mouseX < 410 && mouseY > 235 && mouseY < 268){
                     tabJogadores.renderTabela(renderer);
                     SDL_RenderPresent(renderer);
                 }
-            }
-
+            }//evento click do mouse
+        }//while
         SDL_DestroyRenderer(renderer);
         SDL_DestroyWindow(window);
-    }
+    }//init
 
     TTF_Quit();
     SDL_Quit();

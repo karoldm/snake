@@ -401,7 +401,7 @@
 1628718243 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.hpp
 	<SDL.h>
 
-1628718243 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
+1628724353 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
 	<iostream>
 	<time.h>
 	<string>
@@ -438,7 +438,7 @@
 	<SDL.h>
 	<SDL_ttf.h>
 
-1628718244 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
+1628723912 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
 	<iostream>
 	<SDL.h>
 	"snake.hpp"
