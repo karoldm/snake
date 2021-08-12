@@ -67,9 +67,9 @@ void GameOver(SDL_Renderer *renderer){
 
 }
 
-void NovoJogo(std::string nome, TabelaJogadores *tabJogadores, bool jogadorExistente){
+void NovoJogo(std::string nome, TabelaJogadores *tabJogadores){
 
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE, bool jogadorExistente);
     SDL_RenderClear(renderer);
 
     Snake snake;
@@ -187,10 +187,10 @@ int main( int argc, char * argv[] ){
                 SDL_GetMouseState(&mouseX, &mouseY);
                 if(mouseX > 193 && mouseX < 410 && mouseY > 185 && mouseY < 216){
                     nome = input();
-                    if(tabJogadores.buscar(nome) != NULL)
+                    //if(tabJogadores.buscar(nome) != NULL)
                         NovoJogo(nome, &tabJogadores, true);
-                    else
-                        NovoJogo(nome, &tabJogadores, false);
+                    //else
+                        //NovoJogo(nome, &tabJogadores, false);
                 }
                 else if(mouseX > 193 && mouseX < 410 && mouseY > 235 && mouseY < 268){
                     tabJogadores.renderTabela(renderer);

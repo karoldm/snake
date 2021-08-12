@@ -92,7 +92,7 @@ bool Snake::insereFinalTail(){
 void Snake::checarColisao(SDL_Renderer *renderer){
 
     //colisao com food
-    if(abs(snake.head->rect.x - food.getFoodPos().x) < SNAKEW && abs(snake.head->rect.y - food.getFoodPos().y) < SNAKEH){
+    if(abs(snake.head->rect.x - (food.getFoodPos().x+5)) < SNAKEW && abs(snake.head->rect.y - (food.getFoodPos().y+5)) < SNAKEH){
         insereFinalTail(); //aumentando tail
         food.loadFood(renderer, obst.getVetObst()); //gerando uma nova posição para food
         totalScore = totalScore + 10; //aumentandos os pontos
@@ -108,11 +108,12 @@ void Snake::checarColisao(SDL_Renderer *renderer){
 
     //colisao com obstaculos
     for(int i = 0; i < QUANTIDADE_OBSTACULOS; i++)
-        if(abs(snake.head->rect.x - obst.getVetObst()[i].x+15) < SNAKEW && abs(snake.head->rect.y - obst.getVetObst()[i].y-15) < SNAKEH){
+        if(abs(snake.head->rect.x - (obst.getVetObst()[i].x+10)) < SNAKEW && abs(snake.head->rect.y - (obst.getVetObst()[i].y+12)) < SNAKEH){
             printf("x: %d y: %d", abs(snake.head->rect.x - obst.getVetObst()[i].x), abs(snake.head->rect.y - obst.getVetObst()[i].y));
-            life.popLife(); //a cada colisão com os obstaculos voce perde um ponto de vida
+            life.popLife(); //a cada colisão com os obstaculos o jogador perde um ponto de vida
             if(!life.getAlive()) inGame = false;
             returnSnakeInicio(); //cobrinha retorna a posição inicial
+
         }
 }
 
