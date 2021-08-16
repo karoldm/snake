@@ -64,12 +64,11 @@ void GameOver(SDL_Renderer *renderer){
         if(e.type == SDL_QUIT) break;
         SDL_RenderPresent(renderer);
     }
-
 }
 
-void NovoJogo(std::string nome, TabelaJogadores *tabJogadores){
+int NovoJogo(){
 
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE, bool jogadorExistente);
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
     SDL_RenderClear(renderer);
 
     Snake snake;
@@ -95,25 +94,13 @@ void NovoJogo(std::string nome, TabelaJogadores *tabJogadores){
     }
 
     GameOver(renderer);
-    //std::cout << "nome " << nome << " score " << snake.getScore();
-
-    /*if(jogadorExistente){
-        tabJogadores->atualizarScore(snake.getScore(), nome);
-    }
-    else {
-        struct jogador newJogador;
-        newJogador.nome = nome;
-        newJogador.score = snake.getScore();
-        tabJogadores->inserir(newJogador);
-    }*/
-
-    //struct jogador *newJogador = tabJogadores->buscar(nome);
-    //std::cout << "nome " << newJogador->nome << " score " << newJogador->score;
+    return snake.getScore();
 }
 
 std::string input(){ //retorna o nome do jogador
     SDL_Event e;
     SDL_StartTextInput();
+
     std::string nome = "", text = "Insira seu nome e pressione enter para continuar!";
 
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
@@ -187,14 +174,17 @@ int main( int argc, char * argv[] ){
                 SDL_GetMouseState(&mouseX, &mouseY);
                 if(mouseX > 193 && mouseX < 410 && mouseY > 185 && mouseY < 216){
                     nome = input();
-                    //if(tabJogadores.buscar(nome) != NULL)
-                        NovoJogo(nome, &tabJogadores, true);
-                    //else
-                        //NovoJogo(nome, &tabJogadores, false);
+                    char nomeChar[15];
+                    for(int i=0; i<nome.length(); i++) nomeChar[i] = nome[i];
+
+                    if(tabJogadores.buscar(nomeChar) == NULL) tabJogadores.inserir(nomeChar, 0);
+                    int score = NovoJogo();
+                    tabJogadores.atualizarScore(score, nomeChar);
                 }
                 else if(mouseX > 193 && mouseX < 410 && mouseY > 235 && mouseY < 268){
                     tabJogadores.renderTabela(renderer);
-                    SDL_RenderPresent(renderer);
+                    while(event.type != SDL_QUIT)
+                        SDL_RenderPresent(renderer);
                 }
             }//evento click do mouse
         }//while

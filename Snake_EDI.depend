@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1628717951 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.cpp
-	<string>
+1629137034 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.cpp
+	<string.h>
 	<SDL.h>
 	<SDL_ttf.h>
 	"hashing.hpp"
 	<iostream>
+	<typeinfo>
 
 1608572888 c:\users\karol\downloads\sdl2-devel-2.0.14-mingw\sdl2-2.0.14\x86_64-w64-mingw32\include\sdl2\sdl.h
 	"SDL_main.h"
@@ -380,7 +381,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1628718243 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.hpp
+1629129378 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.hpp
 	<SDL.h>
 	<string>
 
@@ -392,7 +393,7 @@
 1628718243 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\food.hpp
 	<SDL.h>
 
-1626559367 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\globalvariables.hpp
+1628951548 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\globalvariables.hpp
 
 1628717954 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.cpp
 	<SDL.h>
@@ -401,7 +402,7 @@
 1628718243 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.hpp
 	<SDL.h>
 
-1628725417 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
+1629136147 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
 	<iostream>
 	<time.h>
 	<string>
@@ -422,7 +423,7 @@
 1628718244 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\obstaculos.hpp
 	<SDL.h>
 
-1628718244 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.hpp
+1628954275 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.hpp
 	<SDL.h>
 	<SDL_ttf.h>
 
@@ -432,13 +433,13 @@
 	<time.h>
 	<SDL.h>
 
-1628717952 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.cpp
+1628954275 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.cpp
 	"score.hpp"
 	<string>
 	<SDL.h>
 	<SDL_ttf.h>
 
-1628726430 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
+1628954356 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
 	<iostream>
 	<SDL.h>
 	"snake.hpp"

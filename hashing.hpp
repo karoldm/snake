@@ -4,13 +4,12 @@
 #define MAX 17 //preferencia por números primos
 
 struct jogador {
-    std::string nome;
+    char nome[15];
     int score;
     struct jogador *prox;
 };
 
 class TabelaJogadores {
-    struct jogador *jogadores[MAX];
 
     TTF_Font* Font;
     SDL_Color White;
@@ -18,13 +17,14 @@ class TabelaJogadores {
     SDL_Surface *surfaceText;
     SDL_Texture *messageText;
 
-    int hashing(std::string chave);
+    int hashing(char* chave);
 
 public:
+    struct jogador* jogadores[MAX];
     void inicializar ();
-    bool inserir( struct jogador reg);
-    void remover( std::string nome);
-    struct jogador* buscar( std::string nome);
-    void atualizarScore(int score, std::string nome);
+    bool inserir(char* nome, int score);
+    void remover( char* nome);
+    struct jogador* buscar( char* nome);
+    void atualizarScore(int score, char* nome);
     void renderTabela(SDL_Renderer *renderer);
 };
