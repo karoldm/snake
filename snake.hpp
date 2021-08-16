@@ -4,13 +4,13 @@
 #include "obstaculos.hpp"
 #include "score.hpp"
 
-struct TailNode{
+struct TailNode{ //nó da lista
     SDL_Rect rect;
     struct TailNode *prox;
     struct TailNode *ant;
 };
 
-struct snake{
+struct snake{ //TAD para snake
     int dx;
     int dy;
     int tam;
@@ -27,11 +27,11 @@ class Snake{
     int dir;
     int totalScore;
 
-    static const int INITIAL_X = 10;
-    static const int INITIAL_Y = 10;
+    static const int INITIAL_X = 10; //posição inicial da cobra
+    static const int INITIAL_Y = 10; //posição inicial da cobra
     static const int SNAKEW = 10;
     static const int SNAKEH = 10;
-    static const int INITIAL_TAIL = 5;
+    static const int INITIAL_TAIL = 5; //quantidade inicial de nós
 
     enum direcao{LEFT, RIGHT, UP, DOWN};
 

@@ -4,11 +4,11 @@
 #include "globalVariables.hpp"
 
 void Snake::newGame(SDL_Renderer *renderer){
-    score.loadScore(renderer);
-    score.updateScore(renderer, 0);
-    life.loadLife(renderer);
-    obst.loadObstaculos(renderer);
-    food.loadFood(renderer, obst.getVetObst());
+    score.loadScore(renderer); //exibindo score do jogador
+    score.updateScore(renderer, 0); //atualizando score
+    life.loadLife(renderer); //exibindo barra de vida
+    obst.loadObstaculos(renderer); //carregando obstaculos
+    food.loadFood(renderer, obst.getVetObst()); //carregando maça
     newSnake();
     totalScore = 0;
     inGame = true;
@@ -25,7 +25,7 @@ void Snake::newSnake(){
     snake.head->ant = NULL;
     snake.lastTail = snake.head;
 
-    for(int i = 0; i < INITIAL_TAIL; i++) insereFinalTail();
+    for(int i = 0; i < INITIAL_TAIL; i++) insereFinalTail(); //inserindo nós iniciais
 
 }
 
@@ -37,7 +37,7 @@ void Snake::returnSnakeInicio(){
 
 }
 
-void Snake::renderSnake(SDL_Rect *tailNode, SDL_Renderer *renderer){
+void Snake::renderSnake(SDL_Rect *tailNode, SDL_Renderer *renderer){ //renderiza nó por nó
 
     SDL_SetRenderDrawColor(renderer, 0, 255, 0, SDL_ALPHA_OPAQUE);
     SDL_RenderFillRect(renderer, tailNode);
@@ -46,23 +46,17 @@ void Snake::renderSnake(SDL_Rect *tailNode, SDL_Renderer *renderer){
 
 void Snake::updateSnake(SDL_Renderer *renderer){
 
-    for(struct TailNode *aux = snake.lastTail; aux != NULL; aux = aux->ant){
+    for(struct TailNode *aux = snake.lastTail; aux != NULL; aux = aux->ant){ //percorrendo cobra
 
-        if(aux->ant == NULL){
-            snake.head->rect.x += snake.dx * SNAKEW;
-            snake.head->rect.y += snake.dy * SNAKEH;
+        if(aux->ant == NULL){ //cabeça da cobra
+            snake.head->rect.x += snake.dx * SNAKEW; //nova posição
+            snake.head->rect.y += snake.dy * SNAKEH; //novaposição
         }
 
         else{
-        //colisao com head
-            if(abs(snake.head->rect.x - aux->rect.x) < SNAKEW-10 &&  abs(snake.head->rect.y - aux->rect.y) < SNAKEH-10){
-                life.popLife();
-                if(!life.getAlive()) inGame = false;
-                returnSnakeInicio();
-            }
 
-            aux->rect.x = aux->ant->rect.x;
-            aux->rect.y = aux->ant->rect.y;
+            aux->rect.x = aux->ant->rect.x; //"copiando posição" da cabeça
+            aux->rect.y = aux->ant->rect.y; //"copiando posição" da cabeça
         }
 
         renderSnake(&aux->rect, renderer);
@@ -70,8 +64,8 @@ void Snake::updateSnake(SDL_Renderer *renderer){
     checarColisao(renderer);
 }
 
-bool Snake::insereFinalTail(){
-    struct TailNode *newNode = (struct TailNode*)malloc(sizeof(struct TailNode));
+bool Snake::insereFinalTail(){ //insere um novo nó na lista snake
+    struct TailNode *newNode = (struct TailNode*)malloc(sizeof(struct TailNode)); //alocando novo nó
 
     if(newNode == NULL) return false;
 

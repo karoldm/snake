@@ -381,7 +381,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1629129378 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.hpp
+1629139245 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\hashing.hpp
 	<SDL.h>
 	<string>
 
@@ -402,7 +402,7 @@
 1628718243 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\life.hpp
 	<SDL.h>
 
-1629136147 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
+1629139134 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\main.cpp
 	<iostream>
 	<time.h>
 	<string>
@@ -413,7 +413,7 @@
 	<SDL.h>
 	<SDL_ttf.h>
 
-1628718244 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.hpp
+1629139587 c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.hpp
 	<SDL.h>
 	"life.hpp"
 	"food.hpp"
@@ -433,13 +433,13 @@
 	<time.h>
 	<SDL.h>
 
-1628954275 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.cpp
+1629139790 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\score.cpp
 	"score.hpp"
 	<string>
 	<SDL.h>
 	<SDL_ttf.h>
 
-1628954356 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
+1629139750 source:c:\users\karol\onedrive\햞ea de trabalho\ed i\snake_edi\snake_edi\snake.cpp
 	<iostream>
 	<SDL.h>
 	"snake.hpp"
